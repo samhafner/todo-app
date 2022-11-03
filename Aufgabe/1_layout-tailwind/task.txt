@@ -1,0 +1,52 @@
+Todo App
+
+Erstelle das Layout für eine Todo App mit Tailwind CSS nach dieser Vorlage.
+
+PRO-GAMER TIPP: 
+
+Wir wissen, dass HTML Elemente mit ihrem Content wachsen. (oder auch mit padding und margin)
+
+Padding soll verwendet werden um die container Größe zu verändern, margin nur um den abstand zu anderen Elementen zu verändern.
+
+Versucht dieses Verhalten zu eurem Vorteil zu nutzen um möglichst wenige heights und widths zu verwenden.
+
+Es dürfen keine <br> verwendet werden. Das layout ist mit flex oder grid umzusetzen!!!!!
+
+Ziel ist, dass die Todo App am Ende aussieht wie auf dem Bild.
+
+    Die Farbwahl ist dabei egal.
+    Die Borders, Button und Input sollen allerdings genau diese Abrundungen aufweisen.
+    Die gesamte Todo App soll dabei mittig auf unserer Seite zentriert sein.
+    Legt dafür ein neues Projekt mit dem Namen "TodoApp" an
+    Bindet Tailwind ein und konfiguriert es so, dass es funktioniert (bei Fragen sofort melden!!! TIPP: wenn man nicht weiter kommt - beim Form Projekt nachschauen =) ) 
+
+Responsive Design:
+
+Die Todo App soll voll responsive sein, das heißt:
+
+     sie soll bei Desktop und Tablet Größe in der Mitte zentriert sein
+    bei Mobile Device Größe soll sie jedoch den gesamten Viewport einnehmen 
+
+Hierfür gibt es bei tailwind schon vorgefertigte Breakpoints siehe:
+
+https://tailwindcss.com/docs/responsive-design
+
+Dabei ist ganz wichtig diesen Absatz durchzulesen um etwaiger Frustration vorzubeugen:
+
+https://tailwindcss.com/docs/responsive-design#mobile-first
+
+Anforderungen:
+
+    alle buttons (+ und delete ) sollen einen hover Effekt haben
+    jedes einzelne todo soll einen subtilen hover effekt haben wenn man mit der maus darüber hovert (transparenz verändern)
+    das Input Feld um ein Todo hinzuzufügen soll wenn es fokussiert ist eine farbige outline haben 
+    außerdem soll der focus automatisch im input feld gesetzt sein (autofocus) 
+    für die icons soll wieder bootstrap icons verwendet werden https://icons.getbootstrap.com/#install
+    der weiße bereich in dem sich die todos befinden soll eine fixe größe besitzen und scrollbar werden sobald mehr todos als platz vorhanden sind
+
+
+
+
+OPTIONAL für diejenigen die sehr schnell arbeiten und sich sonst langweilen:
+
+    versucht einen darkmode einzubauen
