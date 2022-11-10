@@ -104,6 +104,7 @@ function renderTodo(todo) {
     checkButton.addEventListener('click', function (event) {
         const itemKey = event.target.parentElement.parentElement.dataset.key;
         toggleDone(itemKey);
+        localStorage.setItem('todos', JSON.stringify(todoItems)); 
     })
 
     const deleteButton = node.querySelector("[name=delete-button]")
