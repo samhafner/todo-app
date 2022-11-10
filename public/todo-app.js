@@ -1,6 +1,12 @@
 
 // This is the array that will hold the todo list items
-let todoItems = [];
+
+let todoItems = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+
+todoItems.forEach( todo => {
+    renderTodo(todo);
+})
+
 
 // This function will create a new todo object based on the
 // text that was entered in the text input, and push it into
@@ -13,6 +19,7 @@ function addTodo(text) {
     };
 
     todoItems.push(todo);
+    localStorage.setItem('todos', JSON.stringify(todoItems)); 
     renderTodo(todo);
 }
 
@@ -120,6 +127,7 @@ function deleteTodo(key) {
     // remove the todo item from the array by filtering it out
     todoItems = todoItems.filter(item => item.id !== Number(key));
     renderTodo(todo);
+    localStorage.setItem('todos', JSON.stringify(todoItems)); 
 }
 
 function toggleDone(key) {
